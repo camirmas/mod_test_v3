@@ -1,0 +1,140 @@
+
+ **************************************************************************************************
+ OpenFAST
+
+ Copyright (C) 2021 National Renewable Energy Laboratory
+ Copyright (C) 2021 Envision Energy USA LTD
+
+ This program is licensed under Apache License Version 2.0 and comes with ABSOLUTELY NO WARRANTY.
+ See the "LICENSE" file distributed with this software for details.
+ **************************************************************************************************
+
+ OpenFAST-v3.0.0-dirty
+ Compile Info:
+  - Compiler: Intel(R) Fortran Compiler 2021
+  - Architecture: 64 bit
+  - Precision: single
+  - OpenMP: No
+  - Date: Nov 04 2021
+  - Time: 12:13:05
+ Execution Info:
+  - Date: 11/23/2021
+  - Time: 13:34:59-0800
+
+ OpenFAST input file heading:
+     FAST Certification Test #25: NREL 5.0 MW Baseline Wind Turbine with OC4-DeepCwind semi
+     configuration, for use in offshore analysis
+
+ Running ElastoDyn.
+ Nodal outputs section of ElastoDyn input file not found or improperly formatted.
+ Running AeroDyn.
+ AD15 Nodal Outputs: Nodal output section of AeroDyn input file not found or improperly formatted.
+ Skipping nodal outputs.
+ Warning: Turning off Unsteady Aerodynamics because C_nalpha is 0. (node 1, blade 1)
+ Warning: Turning off Unsteady Aerodynamics because C_nalpha is 0. (node 2, blade 1)
+ Warning: Turning off Unsteady Aerodynamics because C_nalpha is 0. (node 3, blade 1)
+ Warning: Turning off Unsteady Aerodynamics because C_nalpha is 0. (node 4, blade 1)
+ Warning: Turning off Unsteady Aerodynamics because C_nalpha is 0. (node 1, blade 2)
+ Warning: Turning off Unsteady Aerodynamics because C_nalpha is 0. (node 2, blade 2)
+ Warning: Turning off Unsteady Aerodynamics because C_nalpha is 0. (node 3, blade 2)
+ Warning: Turning off Unsteady Aerodynamics because C_nalpha is 0. (node 4, blade 2)
+ Warning: Turning off Unsteady Aerodynamics because C_nalpha is 0. (node 1, blade 3)
+ Warning: Turning off Unsteady Aerodynamics because C_nalpha is 0. (node 2, blade 3)
+ Warning: Turning off Unsteady Aerodynamics because C_nalpha is 0. (node 3, blade 3)
+ Warning: Turning off Unsteady Aerodynamics because C_nalpha is 0. (node 4, blade 3)
+ Running HydroDyn.
+   Setting WaveTMax to 0.0 since WaveMod = 0
+  Reading in WAMIT output with root name
+  "./report_data/5MW_OC4Semi_WSt_WavesWN_base/../5MW_Baseline/HydroData/marin_semi".
+  Computing radiation impulse response functions and wave diffraction forces.
+ Running MoorDyn (v1.01.02F, 8-Apr-2016).
+   MD_Init: Opening MoorDyn input file:
+   ./report_data/5MW_OC4Semi_WSt_WavesWN_base/NRELOffshrBsline5MW_OC4DeepCwindSemi_MoorDyn.dat
+    Creating mooring system.   3 fairleads, 3 anchors, 0 connects.
+    Finalizing ICs using dynamic relaxation.
+
+   t=2  FairTen 1: 1.11024E+06, 0, 0
+   t=4  FairTen 1: 1.09580E+06, 1.11024E+06, 0
+   t=6  FairTen 1: 1.10835E+06, 1.09580E+06, 1.11024E+06
+   t=8  FairTen 1: 1.10401E+06, 1.10835E+06, 1.09580E+06
+    Fairlead tensions converged to 1% after 8 seconds.
+  Time: 0 of 60 seconds.
+ The BEM solution is being turned off due to low TSR.  (TSR = 0). This warning will not be
+ repeated though the condition may persist. (See GeomPhi output channel.)
+ Warning: SkewedWakeCorrection encountered a large value of chi (161.42 deg), so the yaw
+ correction will be limited. This warning will not be repeated though the condition may persist.
+ See the AD15 chi output channels, and consider turning off the Pitt/Peters skew model (set
+ SkewMod=1) if this condition persists.
+
+
+ Time: 1 of 60 seconds.  Estimated final completion at 13:45:07.
+
+ Time: 2 of 60 seconds.  Estimated final completion at 13:43:60.
+
+ Time: 3 of 60 seconds.  Estimated final completion at 13:43:54.
+
+ Time: 4 of 60 seconds.  Estimated final completion at 13:44:15.
+
+ Time: 5 of 60 seconds.  Estimated final completion at 13:44:06.
+
+ Time: 6 of 60 seconds.  Estimated final completion at 13:43:54.
+
+ Time: 7 of 60 seconds.  Estimated final completion at 13:44:19.
+
+ Time: 8 of 60 seconds.  Estimated final completion at 13:44:09.
+
+ Time: 9 of 60 seconds.  Estimated final completion at 13:44:13.
+
+ Time: 10 of 60 seconds.  Estimated final completion at 13:44:10.
+
+ Time: 11 of 60 seconds.  Estimated final completion at 13:44:01.
+
+ Time: 12 of 60 seconds.  Estimated final completion at 13:44:06.
+
+ Time: 13 of 60 seconds.  Estimated final completion at 13:44:00.
+
+ Time: 14 of 60 seconds.  Estimated final completion at 13:44:03.
+
+ Time: 15 of 60 seconds.  Estimated final completion at 13:43:55.
+
+ Time: 16 of 60 seconds.  Estimated final completion at 13:44:15.
+
+ Time: 17 of 60 seconds.  Estimated final completion at 13:44:05.
+
+ Time: 18 of 60 seconds.  Estimated final completion at 13:44:17.
+
+ Time: 19 of 60 seconds.  Estimated final completion at 13:44:04.
+
+ Time: 20 of 60 seconds.  Estimated final completion at 13:43:59.
+
+ Time: 21 of 60 seconds.  Estimated final completion at 13:44:02.
+
+ Time: 22 of 60 seconds.  Estimated final completion at 13:44:15.
+
+ Time: 23 of 60 seconds.  Estimated final completion at 13:44:00.
+
+ Time: 24 of 60 seconds.  Estimated final completion at 13:43:55.
+
+ Time: 25 of 60 seconds.  Estimated final completion at 13:44:03.
+
+ Time: 26 of 60 seconds.  Estimated final completion at 13:44:02.
+
+ Time: 27 of 60 seconds.  Estimated final completion at 13:44:03.
+
+ Time: 28 of 60 seconds.  Estimated final completion at 13:44:11.
+
+ Time: 29 of 60 seconds.  Estimated final completion at 13:44:07.
+
+ Time: 30 of 60 seconds.  Estimated final completion at 13:43:57.
+
+ Time: 31 of 60 seconds.  Estimated final completion at 13:43:58.
+
+
+  Total Real Time:       4.9161 minutes
+  Total CPU Time:        5.0331 minutes
+  Simulation CPU Time:   3.9404 minutes
+  Simulated Time:        0.53167 minutes
+  Time Ratio (Sim/CPU):  0.13493
+
+  OpenFAST completed.
+
