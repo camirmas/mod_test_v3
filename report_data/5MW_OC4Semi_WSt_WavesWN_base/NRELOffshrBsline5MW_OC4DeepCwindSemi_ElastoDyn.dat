@@ -7,17 +7,17 @@ False         Echo        - Echo input data to "<RootName>.ech" (flag)
 ---------------------- ENVIRONMENTAL CONDITION ---------------------------------
     9.80665   Gravity     - Gravitational acceleration (m/s^2)
 ---------------------- DEGREES OF FREEDOM --------------------------------------
-True          FlapDOF1    - First flapwise blade mode DOF (flag)
-True          FlapDOF2    - Second flapwise blade mode DOF (flag)
-True          EdgeDOF     - First edgewise blade mode DOF (flag)
+False          FlapDOF1    - First flapwise blade mode DOF (flag)
+False          FlapDOF2    - Second flapwise blade mode DOF (flag)
+False          EdgeDOF     - First edgewise blade mode DOF (flag)
 False         TeetDOF     - Rotor-teeter DOF (flag) [unused for 3 blades]
 False         DrTrDOF     - Drivetrain rotational-flexibility DOF (flag)
-True          GenDOF      - Generator DOF (flag)
-True          YawDOF      - Yaw DOF (flag)
-True          TwFADOF1    - First fore-aft tower bending-mode DOF (flag)
-True          TwFADOF2    - Second fore-aft tower bending-mode DOF (flag)
-True          TwSSDOF1    - First side-to-side tower bending-mode DOF (flag)
-True          TwSSDOF2    - Second side-to-side tower bending-mode DOF (flag)
+False          GenDOF      - Generator DOF (flag)
+False          YawDOF      - Yaw DOF (flag)
+False          TwFADOF1    - First fore-aft tower bending-mode DOF (flag)
+False          TwFADOF2    - Second fore-aft tower bending-mode DOF (flag)
+False          TwSSDOF1    - First side-to-side tower bending-mode DOF (flag)
+False          TwSSDOF2    - Second side-to-side tower bending-mode DOF (flag)
 True          PtfmSgDOF   - Platform horizontal surge translation DOF (flag)
 True          PtfmSwDOF   - Platform horizontal sway translation DOF (flag)
 True          PtfmHvDOF   - Platform vertical heave translation DOF (flag)
@@ -136,6 +136,12 @@ True          TabDelim    - Use tab delimiters in text tabular output file? (fla
 "PtfmRoll"                - Platform rotational roll  displacement
 "PtfmPitch"               - Platform rotational pitch displacement
 "PtfmYaw"                 - Platform rotational yaw   displacement
+"PtfmFxi"
+"PtfmFyi"
+"PtfmFzi"
+"PtfmMxi"
+"PtfmMyi"
+"PtfmMzi"
 "PtfmTVxi"
 "PtfmTVyi"
 "PtfmTVzi"

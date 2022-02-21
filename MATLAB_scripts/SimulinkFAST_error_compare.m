@@ -16,7 +16,7 @@ simulink_file = outb_files(contains(outb_files, '_hybrid'));
 simulink_file = join([outb_dir, '/', simulink_file], '');
 [fast_data, fast_params] = ReadFASTbinary(fast_file{1});
 [simulink_data, simulink_params] = ReadFASTbinary(simulink_file{1});
-nrmse_errors = zeros(length(params));
+nrmse_errors = zeros(length(params), 1);
 
 for k = 1:length(params)
     fast_param_col = strcmp(params{k}, fast_params);
@@ -29,9 +29,4 @@ for k = 1:length(params)
     nrmse_errors(k) = param_nrmse * 100;
 end
 
-nrmse_errors
-% h = bar(nrmse_errors);
-% ylabel('Normalized RMS Error (%)')
-% title('Coupling Error')
-% grid on
-% legend(h, fields_read, 'Location', 'bestoutside', 'Orientation', 'horizontal');
+disp(nrmse_errors);

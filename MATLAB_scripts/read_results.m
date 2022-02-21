@@ -7,11 +7,11 @@ else
 end
 
 fields = {'PtfmSurge', 'PtfmSway', 'PtfmHeave', 'PtfmPitch', 'PtfmRoll', ...
-    'PtfmYaw', 'PtfmTVxi', 'PtfmTVyi', 'PtfmTVzi', 'PtfmRVyi', 'PtfmRVxi', 'PtfmRVzi', 'RotSpeed'};
+    'PtfmYaw'};%, 'PtfmTVxi', 'PtfmTVyi', 'PtfmTVzi', 'PtfmRVyi', 'PtfmRVxi', 'PtfmRVzi', 'RotSpeed'};
 
 fields_read = {'PtfmSurge', 'PtfmSway', 'PtfmHeave', 'PtfmPitch', 'PtfmRoll', ...
-    'PtfmYaw', 'PtfmSurgeVel', 'PtfmSwayVel', 'PtfmHeaveVel', 'PtfmPitchVel', ...
-    'PtfmRollVel', 'PtfmYawVel', 'RotSpeed'};
+    'PtfmYaw'}; %, 'PtfmSurgeVel', 'PtfmSwayVel', 'PtfmHeaveVel', 'PtfmPitchVel', ...
+    %'PtfmRollVel', 'PtfmYawVel', 'RotSpeed'};
 
 results = [];
 for i=1:length(fields)
