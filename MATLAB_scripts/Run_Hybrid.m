@@ -7,7 +7,7 @@
 
 % these variables are defined in the OpenLoop model's FAST_SFunc block:
 
-TMax               = 360; % seconds
+TMax               = 30; % seconds
 
 disp('Running FAST Baseline');
 FAST_InputFileName = '../report_data/5MW_OC4Semi_WSt_WavesWN_base/5MW_OC4Semi_WSt_WavesWN_FAST.fst';

@@ -11,14 +11,14 @@ TMax               = 10; % seconds
 
 disp('Running FAST Baseline');
 FAST_InputFileName = '../report_data/5MW_OC4Semi_WSt_WavesWN_base/5MW_OC4Semi_WSt_WavesWN_FAST.fst';
-sim('../open_loop_test.slx',[0,TMax]);
+sim('../open_loop_test_HD.slx',[0,TMax]);
 
 disp('Creating Hydro .mat files');
 create_hydro_mat_files('../report_data/5MW_OC4Semi_WSt_WavesWN_base/5MW_OC4Semi_WSt_WavesWN_FAST.SFunc.outb', '5MW_OC4Semi_WSt_WavesWN');
 
 disp('Running Hybrid model');
 FAST_InputFileName = '../report_data/5MW_OC4Semi_WSt_WavesWN_base/5MW_OC4Semi_WSt_WavesWN_hybrid.fst';
-sim('../open_loop_test.slx',[0,TMax]);
+sim('../open_loop_test_HD.slx',[0,TMax]);
 
 disp('Running error comparison');
 movefile '../report_data/5MW_OC4Semi_WSt_WavesWN_base/*.outb' '../report_data/FAST_output_files'
